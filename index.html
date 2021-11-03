@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./Storytel-images/logo.png" />
+
+    <!-- CSS file -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="fonts/Tajawal/stylesheet.css" />
-    <link rel="stylesheet" href="fonts/ge-ss/stylesheet.css" />
-    <link rel="stylesheet" href="fonts/New folder/stylesheet.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -48,10 +57,49 @@
             استمتع بآلاف الكتب الصوتية على موبايلك<br />
             مقابل 89 جنيهًا شهريًا فقط، واستمتع باشتراك بلا حدود
           </p>
-
           <div class="button">جرّب التطبيق الان</div>
         </div>
       </div>
     </section>
+
+    <section class="sec-2">
+      <div class="container">
+        <div class="head-section">
+          <div class="heading">
+            آلاف الكتب الصوتية والإلكترونية على موبايلك!
+          </div>
+          <div class="desc">
+            استمع إلى آلاف الكتب الصوتية، من الكتب الأكثر مبيعًا إلى الروايات
+            المشهورة بالإضافة إلى<br />
+            قصص الأطفال الممتعة والسير الذاتية وملخصات الكتب، اكتشف مكتبتنا
+            الضخمة!
+          </div>
+        </div>
+        <div class="grid-books">
+          <div class="outer"><img src="Storytel-images/cover7.jpg" /></div>
+          <div class="outer"><img src="Storytel-images/cover8.jpg" /></div>
+          <div class="outer"><img src="Storytel-images/cover9.jpg" /></div>
+          <div class="outer o4"><img src="Storytel-images/cover.jpg" /></div>
+          <div class="outer o5">
+            <img src="Storytel-images/cover5.jpg" alt="" />
+          </div>
+          <div class="outer"><img src="Storytel-images/cover6.jpg" /></div>
+          <div class="outer o7"><img src="Storytel-images/cover2.jpg" /></div>
+          <div class="outer"><img src="Storytel-images/cover3.jpg" /></div>
+          <div class="outer o9"><img src="Storytel-images/cover4.jpg" /></div>
+        </div>
+        <div class="section-footer">
+          <i class="fas fa-angle-left"></i>تصفح عناويننا
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.addEventListener('scroll', function(){
+        let header = document.querySelector('nav');
+        let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scroll-active', windowPosition);
+      })
+    </script>
   </body>
 </html>
