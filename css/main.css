@@ -53,8 +53,11 @@ nav .container {
   align-items: center;
   padding: 15px 0px;
 }
-.scroll-active{
-  background-color: #FFFFFF;
+.scroll-active {
+  background-color: #ffffff;
+}
+nav:hover {
+  background-color: white;
 }
 nav ul {
   list-style: none;
@@ -70,6 +73,63 @@ ul li:first-child {
 nav ul li {
   margin-left: 40px;
 }
+.Drop {
+  position: relative;
+}
+.Drop ul {
+  -webkit-box-shadow: -1px 27px 48px -40px rgb(0 0 0 / 75%);
+  -moz-box-shadow: -1px 27px 48px -40px rgb(0 0 0 / 75%);
+  box-shadow: -1px 27px 48px -40px rgb(0 0 0 / 75%);
+}
+
+.d-1 ul {
+  list-style: none;
+  position: absolute;
+  width: 900px;
+  height: 250px;
+  top: 25px;
+  left: -250px;
+  background-color: white;
+  transition: 0.4s;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px 30px 0px;
+  text-align: right;
+  direction: rtl;
+  display: none;
+}
+.d-2 ul {
+  list-style: none;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 25px;
+  left: -50px;
+  background-color: white;
+  transition: 0.4s;
+  grid-template-columns: 1fr;
+  padding: 50px 25px 10px;
+  text-align: right;
+  direction: rtl;
+  display: none;
+}
+.d-1 ul li,
+.d-2 ul li {
+  transition: 0.4s;
+}
+.d-1:hover ul,
+.d-2:hover ul {
+  display: grid;
+  cursor: initial;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: var(--button-color);
+}
+.d-1 ul li:hover,
+.d-2 ul li:hover {
+  padding-right: 8px;
+}
+
 li i {
   margin-right: 7px;
   padding-bottom: 5px;
@@ -119,6 +179,12 @@ nav .container img {
   font-size: 20px;
   margin-top: 30px;
   font-weight: 500;
+  transition: 0.4s;
+}
+
+.sec-1 .container .right-side .button:hover {
+  background-color: #e35121;
+  cursor: pointer;
 }
 
 .sec-2 {

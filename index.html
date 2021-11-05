@@ -34,10 +34,37 @@
         <ul>
           <li>تسجيل الدخول</li>
           <li>مساعدة</li>
-          <li><i class="fas fa-chevron-down"></i> التصنيفات</li>
+          <li class="Drop d-1">
+            <i class="fas fa-chevron-down"></i> التصنيفات
+            <ul>
+              <li>كتب دينية</li>
+              <li>أدب الجريمة</li>
+              <li>التاريخ</li>
+              <li>تطوير الذات</li>
+              <li>كتب الناشئة</li>
+              <li>روايات رومانسية</li>
+              <li>الإدارة والأعمال</li>
+              <li>الأدب الكلاسيكي</li>
+              <li>الرواية</li>
+              <li>كتب الأطفال</li>
+              <li>كتب واقعية</li>
+              <li>الشعر</li>
+              <li>اللغات</li>
+              <li>سير وتراجم</li>
+              <li>الخيال العلمي</li>
+              <li>القصص</li>
+              <li>الإثارة والتشويق</li>
+            </ul>
+          </li>
           <li>بحث</li>
           <li>نقترح عليك</li>
-          <li><i class="fas fa-chevron-down"></i> رمز الهدية</li>
+          <li class="Drop d-2">
+            <i class="fas fa-chevron-down"></i> رمز الهدية
+            <ul>
+              <li>تفعيل رمز الهدية</li>
+              <li>شراء رمز هدية</li>
+            </ul>
+          </li>
           <li>Storytel جرّب</li>
         </ul>
         <img src="Storytel-images/logo-nav.png" alt="" />
@@ -95,11 +122,11 @@
     </section>
 
     <script>
-      window.addEventListener('scroll', function(){
-        let header = document.querySelector('nav');
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("nav");
         let windowPosition = window.scrollY > 0;
-            header.classList.toggle('scroll-active', windowPosition);
-      })
+        header.classList.toggle("scroll-active", windowPosition);
+      });
     </script>
   </body>
 </html>
